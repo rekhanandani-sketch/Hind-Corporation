@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hind Corporation — A house of ventures</title>
+<meta name="description" content="Hind Corporation builds a small number of products properly. Home to Tradelytica and Design Setu. Founded by Balarun Siddharth.">
+<meta name="theme-color" content="#000000">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Manrope:wght@400;500;600;700;800&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Tiro+Devanagari+Hindi&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Playfair+Display:ital,wght@1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/HindCorporation.css">
+</head>
+<body id="top">
+
+<canvas id="stars"></canvas>
+
+<!-- signature red thread (built by JS) -->
+<svg id="thread" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="threadGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ff1726"/>
+      <stop offset="55%" stop-color="#e00d1b"/>
+      <stop offset="100%" stop-color="#c20510"/>
+    </linearGradient>
+  </defs>
+  <path id="threadPath" d=""/>
+  <circle id="beadHalo" r="9" cx="0" cy="0" opacity="0"/>
+  <circle id="bead" r="3.4" cx="0" cy="0" opacity="0"/>
+</svg>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+    <a href="#top" class="nav__logo" aria-label="Hind Corporation home">
+    <img src="../image/HN.png" alt="Hind Corporation Logo">
+</a> 
+
+  <div class="nav__links" id="navlinks">
+    <a href="#ventures">Ventures</a>
+    <a href="#founder">Founder</a>
+    <a href="#contact" class="nav__cta">Contact</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero" id="hero">
+  <div class="eyebrow"><span class="deva">हिन्द</span> · HIND CORPORATION</div>
+  <img
+    src="../image/HN.png"
+    alt="Hind Corporation"
+    class="hero__logo">
+  <h1 class="hero__title reveal">
+    A house of ventures, <br> joined by a single <br>
+    <span class="thread-word">thread</span>. 
+  </h1>
+<p class="hero__sub reveal">
+We build a small number of products properly - 
+for people who trade the markets, and the
+ people who shape what they see. Two venture.
+  One standard of craft.
+</p>
+  <div class="hero__cta">
+    <a href="#ventures" class="btn btn--primary">
+        Explore our ventures
+        <span class="arr">→</span>
+    </a>
+
+    <a href="#founder" class="btn btn--ghost">
+        Meet the founder
+        <span class="arr">→</span>
+    </a>
+</div>
+</header>
+
+<!-- TICKER -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker__track" id="ticker"></div>
+</div>
+
+<!-- PRODUCTS -->
+<section class="sec" id="ventures">
+  <div class="wrap">
+    <div class="prod__head reveal">
+      <span class="eyebrow">What we build</span>
+      <h2>Two ventures.</h2>
+      <p>Markets and making — different worlds, built to the same standard.</p>
+    </div>
+
+    <div class="cards">
+      <!-- Tradelytica -->
+      <article class="card card--gold reveal d1">
+            <img src="../image/Tradelytica icon.png.svg"
+                  class="card__icon"
+                   alt="Tradelytica">
+                   <span class="card__domain card__domain--gold">
+                     TRADING JOURNAL
+                    </span>
+        <h3 class="card__name">Tradelytica<span class="dot"></span></h3>
+        <p class="card__tag">See the gap between plan and execution.</p>
+        <p class="card__desc">A trading journal and analysis engine for serious traders — log every position, study the behaviour behind each decision, and turn the mistakes that quietly cost you into a measurable edge. <em>Behavioral intelligence, engineered.</em></p>
+        <div class="viz" role="img" aria-label="Equity curve showing the gap between planned and actual performance">
+          <svg viewBox="0 0 320 104" preserveAspectRatio="none">
+            <line class="eq-base" x1="0" y1="92" x2="320" y2="92"/>
+            <path class="eq-gap" d="M14,72 L52,70 L88,80 L124,66 L160,74 L196,58 L232,64 L268,44 L304,32 L304,30 L14,64 Z"/>
+            <path class="eq-plan" d="M14,64 L304,30"/>
+            <path class="eq-exec" d="M14,72 L52,70 L88,80 L124,66 L160,74 L196,58 L232,64 L268,44 L304,32"/>
+            <line class="eq-pin" x1="304" y1="32" x2="304" y2="92"/>
+            <circle class="eq-dot-halo" cx="304" cy="32" r="8"/>
+            <circle class="eq-dot" cx="304" cy="32" r="3.6"/>
+          </svg>
+        </div>
+        <ul class="feats">
+          <li>Log every trade</li>
+          <li>Spot your patterns</li>
+          <li>Fix costly mistakes</li>
+        </ul>
+        <a href="https://tradelytica.com" target="_blank" rel="noopener noreferrer" class="card__link">Explore Tradelytica <span class="arr">→</span></a>
+      </article>
+
+      <!-- Design Setu -->
+      <article class="card reveal d2">
+        <img src="../image/designsetu-app-icon.svg"
+          class="card__icon"
+          alt="Design Setu">
+        <span class="card__domain">Design practice</span>
+        <h3 class="card__name">Design Setu<span class="dot"></span></h3>
+        <p class="card__tag">Where ideas cross into interfaces.</p>
+        <p class="card__desc">A design practice and toolkit that carries a rough concept across to a shipped interface — systems, not one-off screens. <em>Setu</em> — Sanskrit for bridge.</p>
+        <div class="viz" role="img" aria-label="Stylised suspension bridge">
+          <svg viewBox="0 0 320 104" preserveAspectRatio="none">
+            <line class="bridge-pillar" x1="80"  y1="20" x2="80"  y2="86"/>
+            <line class="bridge-pillar" x1="240" y1="20" x2="240" y2="86"/>
+            <path class="bridge-deck" d="M14,72 L306,72"/>
+            <path class="bridge-cable" d="M14,40 Q80,86 160,52 Q240,86 306,40"/>
+            <circle class="bridge-node" cx="80"  cy="20" r="4"/>
+            <circle class="bridge-node" cx="240" cy="20" r="4"/>
+            <circle class="bridge-node" cx="160" cy="52" r="3.5"/>
+          </svg>
+        </div>
+        <ul class="feats">
+          <li>Idea to interface</li>
+          <li>Systems, not screens</li>
+          <li>Ships with you</li>
+        </ul>
+        <a href="#contact" class="card__link">Explore Design Setu <span class="arr">→</span></a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- FOUNDER -->
+<section class="sec founder" id="founder">
+  <div class="wrap">
+    <div class="reveal">
+      <span class="eyebrow">The founder</span>
+      <div class="mono-ring">
+    <div class="ring"></div>
+    <div class="photo">
+        <img src="../image/WhatsApp Image.jpg.jpeg" alt="">
+    </div>
+    </div>
+      <h2>Balarun Siddharth</h2>
+      <div class="founder__role">Founder · Hind Corporation</div>
+    </div>
+    <p class="founder__note reveal d1">“I started Hind Corporation to build a small number of things, properly. Tradelytica and Design Setu look like different worlds — markets and making — but they come from one belief: a good tool should remove friction, never add it. <span class="hl">That is the thread running through everything we make.</span>”</p>
+    <div class="founder__sign reveal d2">Balarun Siddharth</div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="sec" id="contact" style="padding-bottom:0">
+  <div class="cta-band reveal">
+    <div class="cta-inner">
+      <h2>Build with Hind.</h2>
+      <p>Partnerships, product, or a conversation about either venture — the door is open.</p>
+      <a href="mailto:hello@hindcorporation.com" class="btn btn--primary">Start a conversation <span class="arr">→</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="foot">
+  <div class="foot__in">
+      <a href="#top" class="foot__logo">
+    <img src="../image/HN.png"
+     alt="Hind Corporation">
+</a>
+<div class="foot__links">
+    <a href="#">Tradelytica</a>
+    <a href="#">Design Setu</a>
+    <a href="#">Founder</a>
+    <a href="#">Contact</a>
+</div>
+  </div>
+  <div class="foot__meta">© 2026 Hind Corporation · Crafted in India <span class="deva">हिन्द</span></div>
+</footer>
+
+<script src="../js/HindCorporation.js"></script>
+</html>
+</body>
